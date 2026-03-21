@@ -2,6 +2,9 @@ import Link from "next/link";
 import Image from "next/image";
 
 export default function Footer() {
+  const linkClass =
+    "hover:text-white transition-colors py-2 inline-block";
+
   return (
     <footer className="bg-parlia-dark text-gray-400 py-16">
       <div className="max-w-5xl mx-auto px-6 text-center">
@@ -13,56 +16,53 @@ export default function Footer() {
           className="mx-auto mb-8"
         />
 
-        <div className="flex flex-wrap justify-center gap-6 mb-6 text-sm">
-          <Link href="/" className="hover:text-white transition-colors">
+        <div className="flex flex-wrap justify-center gap-x-6 gap-y-1 mb-6 text-sm">
+          <Link href="/" className={linkClass}>
             Home
           </Link>
-          <Link href="/about" className="hover:text-white transition-colors">
+          <Link href="/about" className={linkClass}>
             About Us
           </Link>
-          <Link href="/tour" className="hover:text-white transition-colors">
+          <Link href="/tour" className={linkClass}>
             Tour
           </Link>
-          <Link
-            href="/opinion-dna"
-            className="hover:text-white transition-colors"
-          >
+          <Link href="/opinion-dna" className={linkClass}>
             Opinion DNA™
           </Link>
         </div>
 
-        <div className="flex flex-wrap justify-center gap-6 mb-6 text-sm">
-          <a href="#" className="hover:text-white transition-colors">
+        <div className="flex flex-wrap justify-center gap-x-6 gap-y-1 mb-6 text-sm">
+          <a href="#" className={linkClass}>
             Instagram
           </a>
-          <a href="#" className="hover:text-white transition-colors">
+          <a href="#" className={linkClass}>
             Facebook
           </a>
-          <a href="#" className="hover:text-white transition-colors">
+          <a href="#" className={linkClass}>
             Twitter
           </a>
-          <a href="#" className="hover:text-white transition-colors">
+          <a href="#" className={linkClass}>
             Newsletter
           </a>
-          <a href="#" className="hover:text-white transition-colors">
+          <a href="#" className={linkClass}>
             Podcast
           </a>
         </div>
 
         <div className="mb-6 text-sm">
-          <a href="#" className="hover:text-white transition-colors">
+          <a href="#" className={linkClass}>
             Encyclopedia of Opinion
           </a>
         </div>
 
-        <div className="flex flex-wrap justify-center gap-6 mb-8 text-sm">
-          <a href="#" className="hover:text-white transition-colors">
+        <div className="flex flex-wrap justify-center gap-x-6 gap-y-1 mb-8 text-sm">
+          <a href="#" className={linkClass}>
             Terms
           </a>
-          <a href="#" className="hover:text-white transition-colors">
+          <a href="#" className={linkClass}>
             Privacy
           </a>
-          <a href="#" className="hover:text-white transition-colors">
+          <a href="#" className={linkClass}>
             Cookies
           </a>
         </div>
