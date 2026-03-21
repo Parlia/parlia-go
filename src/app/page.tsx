@@ -48,7 +48,7 @@ export default function HomePage() {
             </div>
             <div className="md:w-1/2">
               <h3 className="text-2xl font-bold mb-4">Our Mission</h3>
-              <div className="text-sm text-gray-600 leading-relaxed space-y-4">
+              <div className="text-base text-gray-600 leading-relaxed space-y-4">
                 <p>
                   Why is the world so polarised today? What is driving this
                   division? Why do people do what they do? Say? Think? How can we
@@ -98,7 +98,7 @@ export default function HomePage() {
             <div>
               <h3 className="text-2xl font-bold mb-1">Turi Munthe</h3>
               <p className="text-sm text-gray-500 mb-4">Founder &amp; CEO</p>
-              <p className="text-sm text-gray-600 leading-relaxed mb-3">
+              <p className="text-base text-gray-600 leading-relaxed mb-3">
                 Turi Munthe is an entrepreneur and journalist who has dedicated
                 the past few years of his life to understanding why polarization
                 has accelerated in the world, and what we can do about it. He
@@ -135,13 +135,13 @@ export default function HomePage() {
             <div>
               <h3 className="text-2xl font-bold mb-1">J. Paul Neeley</h3>
               <p className="text-sm text-gray-500 mb-4">Co-founder &amp; Head of Design</p>
-              <p className="text-sm text-gray-600 leading-relaxed mb-2">
+              <p className="text-base text-gray-600 leading-relaxed mb-2">
                 J. Paul Neeley is a designer &amp; researcher dedicated to using
                 emerging design methods to create meaningful impact in the world.
                 He consults at design studio Neeley Worldwide, and teaches at the
                 Royal College of Art.
               </p>
-              <p className="text-sm text-gray-600 leading-relaxed mb-3">
+              <p className="text-base text-gray-600 leading-relaxed mb-3">
                 J. Paul leads product development, working directly with experts
                 and our everyday users alike, to improve the experience Parlia
                 delivers.
@@ -173,7 +173,7 @@ export default function HomePage() {
           <div className="flex flex-col md:flex-row gap-12 mb-16">
             <div className="md:w-1/2">
               <h3 className="text-2xl font-bold mb-4">Curiosity + Impact</h3>
-              <p className="text-sm text-gray-600 leading-relaxed mb-4">
+              <p className="text-base text-gray-600 leading-relaxed mb-4">
                 We are forever curious about how our opinions work, and how these
                 thoughts impact our world. And the stakes are high! From trying
                 to understand how Brexit happened, to understanding Climate
@@ -200,7 +200,7 @@ export default function HomePage() {
           {/* Self-discovery */}
           <div className="mb-16">
             <h3 className="text-2xl font-bold mb-4">Self-discovery</h3>
-            <p className="text-sm text-gray-600 leading-relaxed mb-4">
+            <p className="text-base text-gray-600 leading-relaxed mb-4">
               We realised to really understand ourselves and our opinions, we
               need to understand all the complex interactions of a number of
               important impacting factors that are behind what we believe. Too
@@ -208,7 +208,7 @@ export default function HomePage() {
               element to make sense of their opinion, and we&apos;ve realized
               these approaches just don&apos;t go deep enough.
             </p>
-            <p className="text-sm text-gray-600 leading-relaxed mb-4">
+            <p className="text-base text-gray-600 leading-relaxed mb-4">
               Our Opinion DNA™ is a radical new way to understand yourself, a
               kind of complete set of your values, personality, thinking, and
               context, and how these things interact with the world. It is this
@@ -256,7 +256,7 @@ export default function HomePage() {
             </div>
             <div className="md:w-2/3">
               <h3 className="text-2xl font-bold mb-3">Bloomberg Beta</h3>
-              <p className="text-sm text-gray-600 leading-relaxed mb-3">
+              <p className="text-base text-gray-600 leading-relaxed mb-3">
                 We are thrilled to be supported by the brilliant Roy Bahat and
                 the amazing team at Bloomberg Beta, the Venture Capital fund of
                 Bloomberg. They support some incredible startups and we love
@@ -281,7 +281,7 @@ export default function HomePage() {
             </div>
             <div className="md:w-2/3">
               <h3 className="text-2xl font-bold mb-3">Tiny VC</h3>
-              <p className="text-sm text-gray-600 leading-relaxed mb-3">
+              <p className="text-base text-gray-600 leading-relaxed mb-3">
                 A &ldquo;tiny&rdquo; yet visionary crew, we are really grateful
                 for the support and thinking from Philipp Moehring and Andy
                 Chung.
@@ -307,7 +307,7 @@ export default function HomePage() {
               <h3 className="text-2xl font-bold mb-3">
                 Cutting Edge Research, Applied
               </h3>
-              <p className="text-sm text-gray-600 leading-relaxed mb-3">
+              <p className="text-base text-gray-600 leading-relaxed mb-3">
                 We work with researchers at top universities, and are constantly
                 working to ensure that our Opinion DNA™ is reflecting
                 state-of-the-art understanding of human opinion, personality,
@@ -342,7 +342,7 @@ export default function HomePage() {
             </div>
             <div className="md:w-1/2">
               <h3 className="text-2xl font-bold mb-4">Work with us?</h3>
-              <p className="text-sm text-gray-600 leading-relaxed mb-4">
+              <p className="text-base text-gray-600 leading-relaxed mb-4">
                 We are always interested in meeting talented people who share our
                 vision for radical self-discovery, understanding opinions, and
                 improving the world. We are currently looking for talent in:
@@ -356,10 +356,10 @@ export default function HomePage() {
                   or Evolutionary Psychology, we&apos;d love to speak with you.
                 </li>
               </ul>
-              <p className="text-sm text-gray-600 leading-relaxed mb-4">
+              <p className="text-base text-gray-600 leading-relaxed mb-4">
                 Something else? Tell us what we&apos;re missing!
               </p>
-              <p className="text-sm text-gray-600 leading-relaxed mb-4">
+              <p className="text-base text-gray-600 leading-relaxed mb-4">
                 We believe in 4 day work weeks. We&apos;re based in London, but
                 support remote working. Reach out with your CV and tell us why
                 you&apos;d like to work with us at Parlia.
@@ -386,13 +386,13 @@ export default function HomePage() {
           </div>
           <div className="md:w-1/2">
             <h3 className="text-2xl font-bold mb-4">Press Inquiries?</h3>
-            <p className="text-sm text-gray-600 leading-relaxed mb-4">
+            <p className="text-base text-gray-600 leading-relaxed mb-4">
               Sounds like a crazy dream right? Deep self-discovery by mapping
               someone&apos;s Opinion DNA™? Ending polarization by telling people
               about themselves? Global opinion Insights from Values &amp;
               Personality?
             </p>
-            <p className="text-sm text-gray-600 leading-relaxed mb-4">
+            <p className="text-base text-gray-600 leading-relaxed mb-4">
               We can&apos;t wait to tell you our story, what we&apos;ve learned
               about how opinions work, and how we are working to create
               meaningful impact in the world.

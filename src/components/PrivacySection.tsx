@@ -21,7 +21,7 @@ export default function PrivacySection() {
             height={74}
             className="flex-shrink-0 mt-1"
           />
-          <div className="text-sm leading-relaxed space-y-1">
+          <div className="text-base leading-relaxed space-y-1">
             <p>
               Your opinions are always <strong>PRIVATE</strong> to you
             </p>

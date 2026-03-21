@@ -83,15 +83,15 @@ export default function OpinionDNAPage() {
           </div>
           <div className="md:w-1/2">
             <h2 className="text-3xl font-bold mb-4">Reveal your thinking</h2>
-            <p className="text-sm text-gray-600 leading-relaxed mb-3">
+            <p className="text-base text-gray-600 leading-relaxed mb-3">
               Want to improve your life? Be a better you? Transform yourself?
             </p>
-            <p className="text-sm text-gray-600 leading-relaxed mb-3">
+            <p className="text-base text-gray-600 leading-relaxed mb-3">
               Start by understanding what drives your thinking, and reimagine
               the dynamics and possibilities of your family, relationships, and
               work.
             </p>
-            <p className="text-sm text-gray-600 leading-relaxed">
+            <p className="text-base text-gray-600 leading-relaxed">
               Our <strong>Opinion DNA™ report</strong> and{" "}
               <strong>Opinion DNA™ e-book</strong> will help you get there.
             </p>
@@ -116,7 +116,7 @@ export default function OpinionDNAPage() {
               />
             </div>
             <div className="md:w-1/2">
-              <p className="text-sm text-gray-600 leading-relaxed mb-6">
+              <p className="text-base text-gray-600 leading-relaxed mb-6">
                 <strong>Opinion DNA™</strong> is an innovative diagnostic for
                 understanding the complete picture of your personality, values,
                 and thinking, allowing for a correlated and unprecedented look
@@ -372,13 +372,13 @@ export default function OpinionDNAPage() {
               <h3 className="text-2xl font-bold mb-4">
                 Your Complete Opinion DNA™ Report
               </h3>
-              <p className="text-sm text-gray-600 leading-relaxed mb-3">
+              <p className="text-base text-gray-600 leading-relaxed mb-3">
                 Your personal, 137 Spectrum, diagnostic report of ALL your
                 opinion DNA elements. A complete picture of your Core
                 Personality, Core Values, Meta-thinking, Demographic Context, and
                 Topic Expressions.
               </p>
-              <p className="text-sm text-gray-600 leading-relaxed">
+              <p className="text-base text-gray-600 leading-relaxed">
                 The best, and most complete picture of how you think and how that
                 thinking expresses in the world.
               </p>
@@ -400,7 +400,7 @@ export default function OpinionDNAPage() {
               <h3 className="text-2xl font-bold mb-4">
                 Opinion DNA™ e-book
               </h3>
-              <p className="text-sm text-gray-600 leading-relaxed mb-3">
+              <p className="text-base text-gray-600 leading-relaxed mb-3">
                 Your complete guide to understanding each of the elements of
                 your Opinion DNA. Answer deeper questions about your core
                 personality, core values, meta-thinking, demographics and topic

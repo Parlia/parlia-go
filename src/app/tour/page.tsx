@@ -55,14 +55,14 @@ export default function TourPage() {
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
                 See what your Opinion DNA™ says about you
               </h2>
-              <p className="text-sm text-gray-600 leading-relaxed mb-3">
+              <p className="text-base text-gray-600 leading-relaxed mb-3">
                 WHY do you do what you DO? SAY? THINK?
               </p>
-              <p className="text-sm text-gray-600 leading-relaxed mb-3">
+              <p className="text-base text-gray-600 leading-relaxed mb-3">
                 Let&apos;s discover what&apos;s driving it all. Understand your
                 true personality, values, and bias.
               </p>
-              <p className="text-sm text-gray-600 leading-relaxed mb-4">
+              <p className="text-base text-gray-600 leading-relaxed mb-4">
                 All your beliefs, the full picture, in-one-place. A proper
                 overview of you.
               </p>
@@ -90,13 +90,13 @@ export default function TourPage() {
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
                 Go deeper &amp; understand your thinking
               </h2>
-              <p className="text-sm text-gray-600 leading-relaxed mb-3">
+              <p className="text-base text-gray-600 leading-relaxed mb-3">
                 Are you progressive? Woke? Religious?
               </p>
-              <p className="text-sm text-gray-600 leading-relaxed mb-3">
+              <p className="text-base text-gray-600 leading-relaxed mb-3">
                 Opinion DNA™ Elements break it all down for you.
               </p>
-              <p className="text-sm text-gray-600 leading-relaxed mb-4">
+              <p className="text-base text-gray-600 leading-relaxed mb-4">
                 See what drives you. See your blind spots. And explore between
                 the lines.
               </p>
@@ -124,13 +124,13 @@ export default function TourPage() {
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
                 Your view, your take, your vote!
               </h2>
-              <p className="text-sm text-gray-600 leading-relaxed mb-3">
+              <p className="text-base text-gray-600 leading-relaxed mb-3">
                 Tell us what you think. Share your view. Your opinions matter.
               </p>
-              <p className="text-sm text-gray-600 leading-relaxed mb-3">
+              <p className="text-base text-gray-600 leading-relaxed mb-3">
                 Make your voice heard. Across 1,000s of different opinions.
               </p>
-              <p className="text-sm text-gray-600 leading-relaxed mb-4">
+              <p className="text-base text-gray-600 leading-relaxed mb-4">
                 And let&apos;s see what your opinions mean for you.
               </p>
               <a
@@ -157,13 +157,13 @@ export default function TourPage() {
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
                 Discover what makes you unique
               </h2>
-              <p className="text-sm text-gray-600 leading-relaxed mb-3">
+              <p className="text-base text-gray-600 leading-relaxed mb-3">
                 You are unique. You are special. You are NOT an average!
               </p>
-              <p className="text-sm text-gray-600 leading-relaxed mb-3">
+              <p className="text-base text-gray-600 leading-relaxed mb-3">
                 Your experience and views are different than everyone else.
               </p>
-              <p className="text-sm text-gray-600 leading-relaxed mb-4">
+              <p className="text-base text-gray-600 leading-relaxed mb-4">
                 Let&apos;s see how that plays out. And explore what ideas make
                 you, you.
               </p>
@@ -209,10 +209,10 @@ export default function TourPage() {
               <h3 className="text-2xl font-bold mb-4">
                 Dig into your opinions
               </h3>
-              <p className="text-sm text-gray-600 leading-relaxed mb-3">
+              <p className="text-base text-gray-600 leading-relaxed mb-3">
                 Want to say more? Explain your thinking? Discuss ideas?
               </p>
-              <p className="text-sm text-gray-600 leading-relaxed mb-3">
+              <p className="text-base text-gray-600 leading-relaxed mb-3">
                 Tell us more, and explore all sides. Engage with other people
                 from all sides, all over the political spectrum, all over the
                 world.
@@ -241,13 +241,13 @@ export default function TourPage() {
               <h3 className="text-2xl font-bold mb-4">
                 Build your Opinion collection
               </h3>
-              <p className="text-sm text-gray-600 leading-relaxed mb-3">
+              <p className="text-base text-gray-600 leading-relaxed mb-3">
                 Every vote captured. Securely stored. All for you.
               </p>
-              <p className="text-sm text-gray-600 leading-relaxed mb-3">
+              <p className="text-base text-gray-600 leading-relaxed mb-3">
                 All of your thinking, in one place, for you to explore.
               </p>
-              <p className="text-sm text-gray-600 leading-relaxed mb-4">
+              <p className="text-base text-gray-600 leading-relaxed mb-4">
                 We&apos;ll help you better understand yourself and the world in
                 whole new ways.
               </p>
@@ -275,13 +275,13 @@ export default function TourPage() {
               <h3 className="text-2xl font-bold mb-4">
                 Understand how other people see the world
               </h3>
-              <p className="text-sm text-gray-600 leading-relaxed mb-3">
+              <p className="text-base text-gray-600 leading-relaxed mb-3">
                 Join our community of over 10,000 explorers.
               </p>
-              <p className="text-sm text-gray-600 leading-relaxed mb-3">
+              <p className="text-base text-gray-600 leading-relaxed mb-3">
                 Engage with people from all walks of life.
               </p>
-              <p className="text-sm text-gray-600 leading-relaxed mb-4">
+              <p className="text-base text-gray-600 leading-relaxed mb-4">
                 Better understand every side of every opinion, and find out where
                 you fit in.
               </p>
@@ -307,10 +307,10 @@ export default function TourPage() {
             </div>
             <div className="md:w-1/2">
               <h3 className="text-2xl font-bold mb-4">Explore the splits</h3>
-              <p className="text-sm text-gray-600 leading-relaxed mb-3">
+              <p className="text-base text-gray-600 leading-relaxed mb-3">
                 Curious where everyone lands? How it breaks down?
               </p>
-              <p className="text-sm text-gray-600 leading-relaxed mb-4">
+              <p className="text-base text-gray-600 leading-relaxed mb-4">
                 Easily see the trends across gender, political beliefs, and age.
                 On every opinion.
               </p>
@@ -338,13 +338,13 @@ export default function TourPage() {
               <h3 className="text-2xl font-bold mb-4">
                 Cutting edge research, just for you
               </h3>
-              <p className="text-sm text-gray-600 leading-relaxed mb-3">
+              <p className="text-base text-gray-600 leading-relaxed mb-3">
                 We work with researchers at top universities.
               </p>
-              <p className="text-sm text-gray-600 leading-relaxed mb-3">
+              <p className="text-base text-gray-600 leading-relaxed mb-3">
                 All to develop your Opinion DNA.
               </p>
-              <p className="text-sm text-gray-600 leading-relaxed mb-4">
+              <p className="text-base text-gray-600 leading-relaxed mb-4">
                 So you can experience a revolution in self-discovery.
               </p>
               <Link
