@@ -48,6 +48,7 @@ export default function TourPage() {
                 alt="Opinion DNA Model"
                 width={400}
                 height={322}
+                priority
                 className="w-full"
               />
             </div>

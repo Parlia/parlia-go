@@ -43,6 +43,7 @@ export default function HomePage() {
                 alt="Abstract art representing complexity"
                 width={500}
                 height={529}
+                priority
                 className="rounded-lg w-full"
               />
             </div>

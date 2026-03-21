@@ -78,6 +78,7 @@ export default function OpinionDNAPage() {
               alt="Self-discovery neon sign"
               width={400}
               height={423}
+              priority
               className="w-full rounded-lg"
             />
           </div>
