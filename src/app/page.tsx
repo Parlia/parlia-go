@@ -107,15 +107,15 @@ export default function HomePage() {
                 polarization, and human behaviour, etc, to uncover the truth
                 behind our beliefs.
               </p>
-              <div className="flex items-center gap-3">
-                <a href="#">
-                  <Image src="/images/globe-icon.png" alt="Website" width={20} height={20} />
+              <div className="flex items-center gap-1">
+                <a href="#" className="p-2 hover:opacity-70 transition-opacity">
+                  <Image src="/images/globe-icon.png" alt="Website" width={24} height={24} />
                 </a>
-                <a href="#">
-                  <Image src="/images/linkedin-logo.png" alt="LinkedIn" width={20} height={20} />
+                <a href="#" className="p-2 hover:opacity-70 transition-opacity">
+                  <Image src="/images/linkedin-logo.png" alt="LinkedIn" width={24} height={24} />
                 </a>
-                <a href="#">
-                  <Image src="/images/twitter-logo.png" alt="Twitter" width={20} height={20} />
+                <a href="#" className="p-2 hover:opacity-70 transition-opacity">
+                  <Image src="/images/twitter-logo.png" alt="Twitter" width={24} height={24} />
                 </a>
               </div>
             </div>
@@ -146,15 +146,15 @@ export default function HomePage() {
                 and our everyday users alike, to improve the experience Parlia
                 delivers.
               </p>
-              <div className="flex items-center gap-3">
-                <a href="#">
-                  <Image src="/images/globe-icon.png" alt="Website" width={20} height={20} />
+              <div className="flex items-center gap-1">
+                <a href="#" className="p-2 hover:opacity-70 transition-opacity">
+                  <Image src="/images/globe-icon.png" alt="Website" width={24} height={24} />
                 </a>
-                <a href="#">
-                  <Image src="/images/linkedin-logo.png" alt="LinkedIn" width={20} height={20} />
+                <a href="#" className="p-2 hover:opacity-70 transition-opacity">
+                  <Image src="/images/linkedin-logo.png" alt="LinkedIn" width={24} height={24} />
                 </a>
-                <a href="#">
-                  <Image src="/images/twitter-logo.png" alt="Twitter" width={20} height={20} />
+                <a href="#" className="p-2 hover:opacity-70 transition-opacity">
+                  <Image src="/images/twitter-logo.png" alt="Twitter" width={24} height={24} />
                 </a>
               </div>
             </div>
