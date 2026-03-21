@@ -39,19 +39,26 @@ export default function MissionFeatures({
         <h2 className="text-2xl md:text-4xl font-bold text-parlia-purple mb-12 whitespace-pre-line">
           {heading}
         </h2>
-        <div className="bg-purple-600 rounded-2xl py-10 px-6 mb-12">
+        <div className="bg-purple-600 rounded-2xl py-10 px-8 mb-12">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {features.map((feature) => (
-              <div key={feature.title} className="text-center text-white">
+              <div
+                key={feature.title}
+                className="flex items-start gap-4 text-left text-white"
+              >
                 <Image
                   src={feature.icon}
                   alt={feature.title}
-                  width={60}
-                  height={60}
-                  className="mx-auto mb-4"
+                  width={48}
+                  height={48}
+                  className="flex-shrink-0 mt-0.5"
                 />
-                <h4 className="font-bold text-sm mb-2">{feature.title}</h4>
-                <p className="text-xs opacity-90">{feature.description}</p>
+                <div>
+                  <h4 className="font-bold text-sm mb-1">{feature.title}</h4>
+                  <p className="text-xs opacity-90 leading-relaxed">
+                    {feature.description}
+                  </p>
+                </div>
               </div>
             ))}
           </div>
