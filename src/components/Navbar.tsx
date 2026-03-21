@@ -37,7 +37,7 @@ export default function Navbar() {
             <Link
               key={link.href}
               href={link.href}
-              className={`px-5 py-2 rounded-full text-sm font-medium transition-colors ${
+              className={`px-5 py-2.5 rounded-full text-sm font-medium transition-colors min-h-[44px] flex items-center ${
                 isAbout
                   ? "bg-parlia-purple text-white hover:bg-purple-700"
                   : isActive
