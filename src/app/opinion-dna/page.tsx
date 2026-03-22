@@ -1,3 +1,5 @@
+import type { Metadata } from "next";
+import Script from "next/script";
 import Image from "next/image";
 import PrivacySection from "@/components/PrivacySection";
 import TechCrunchQuote from "@/components/TechCrunchQuote";
@@ -5,15 +7,60 @@ import JoinCTA from "@/components/JoinCTA";
 import StatsSection from "@/components/StatsSection";
 import GetStartedCTA from "@/components/GetStartedCTA";
 
-export const metadata = {
-  title: "Opinion DNA™ | Parlia",
+export const metadata: Metadata = {
+  title: "Opinion DNA™ - Discover Your Mind",
   description:
-    "Discover your mind. Map your thinking and transform your life, relationships, and work with your complete Opinion DNA™.",
+    "Map your thinking and transform your life, relationships, and work with Opinion DNA™. A diagnostic for understanding your personality, values, and thinking.",
+  alternates: {
+    canonical: "/opinion-dna",
+  },
+  openGraph: {
+    title: "Opinion DNA™ - Discover Your Mind | Parlia",
+    description:
+      "Map your thinking and transform your life with Opinion DNA™. Understand your personality, values, and cognitive style.",
+  },
+};
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "What is Parlia's Purpose?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Parlia is ALL about your self-discovery. We want to make the world a better, more empathetic place. We believe we can do this by helping individuals better understand themselves.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "How can Premium transform my life?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "We can give you specific personal direction based on your Opinion DNA. These suggestions make actionable your new self-understanding.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What do you do with my data?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "We process the data ONLY to share it back to you. We will never sell your personal data. We will never use your data to target or spam you. Our whole goal is to help you discover your own thinking.",
+      },
+    },
+  ],
 };
 
 export default function OpinionDNAPage() {
   return (
     <>
+      {/* Safe: all values are hardcoded string literals, no user input */}
+      <Script
+        id="faq-jsonld"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} // eslint-disable-line react/no-danger -- safe: static data only
+      />
       {/* Hero */}
       <section className="bg-parlia-cream py-16 px-6 text-center">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">

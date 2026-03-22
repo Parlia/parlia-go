@@ -9,22 +9,51 @@ const dmSans = DM_Sans({
   weight: ["300", "400", "500", "600", "700"],
 });
 
+const SITE_URL = "https://go.parlia.com";
+
 export const metadata: Metadata = {
-  title: "Parlia - Radical Self-Discovery Engine",
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: "Parlia - Radical Self-Discovery Engine & Opinion DNA™",
+    template: "%s | Parlia",
+  },
   description:
     "Parlia is a radical new self-discovery engine, and home of your Opinion DNA™. Discover your personality, values, and thinking.",
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
-    title: "Parlia - Radical Self-Discovery Engine",
+    type: "website",
+    siteName: "Parlia",
+    title: "Parlia - Radical Self-Discovery Engine & Opinion DNA™",
     description:
-      "Learn about the team behind Parlia and the creation of the Opinion DNA, and discover our mission to improve the world through radical self-realization.",
-    images: ["https://www.parlia.com/static/img/sharing_logo_rainbow2.png"],
+      "Parlia is a radical new self-discovery engine. Discover your personality, values, and thinking with Opinion DNA™.",
+    images: [
+      {
+        url: "/images/parlia-logo.svg",
+        width: 406,
+        height: 118,
+        alt: "Parlia Logo",
+      },
+    ],
+    locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Parlia - Radical Self-Discovery Engine",
+    title: "Parlia - Radical Self-Discovery Engine & Opinion DNA™",
     description:
-      "Learn about the team behind Parlia and the creation of the Opinion DNA, and discover our mission to improve the world through radical self-realization.",
-    images: ["https://www.parlia.com/static/img/sharing_logo_rainbow2.png"],
+      "Parlia is a radical new self-discovery engine. Discover your personality, values, and thinking with Opinion DNA™.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
 };
 

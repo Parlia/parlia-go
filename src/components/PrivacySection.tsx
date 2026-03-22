@@ -5,12 +5,8 @@ export default function PrivacySection() {
     <section className="bg-parlia-green text-white py-16 px-6">
       <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-start gap-8">
         <div className="flex-shrink-0">
-          <h2 className="text-5xl md:text-6xl font-bold leading-tight">
-            Privacy
-            <br />
-            on
-            <br />
-            Parlia
+          <h2 className="text-5xl md:text-6xl font-bold leading-tight whitespace-pre-line">
+            {"Privacy\non\nParlia"}
           </h2>
         </div>
         <div className="flex items-start gap-4">

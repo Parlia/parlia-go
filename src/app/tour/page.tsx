@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import AsSeenIn from "@/components/AsSeenIn";
@@ -8,10 +9,18 @@ import MissionFeatures from "@/components/MissionFeatures";
 import StatsSection from "@/components/StatsSection";
 import GetStartedCTA from "@/components/GetStartedCTA";
 
-export const metadata = {
-  title: "Tour | Parlia",
+export const metadata: Metadata = {
+  title: "Tools for Self-Discovery",
   description:
-    "Improve your life, work, and relationships with real tools for self-discovery.",
+    "Explore Parlia's self-discovery tools. See your Opinion DNA™, understand your thinking, vote on opinions, and discover what makes you unique.",
+  alternates: {
+    canonical: "/tour",
+  },
+  openGraph: {
+    title: "Tools for Self-Discovery | Parlia",
+    description:
+      "Explore Parlia's self-discovery tools. See your Opinion DNA™, understand your thinking, and discover what makes you unique.",
+  },
 };
 
 export default function TourPage() {

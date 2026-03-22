@@ -1,3 +1,5 @@
+import type { Metadata } from "next";
+import Script from "next/script";
 import Image from "next/image";
 import Link from "next/link";
 import AsSeenIn from "@/components/AsSeenIn";
@@ -8,9 +10,58 @@ import MissionFeatures from "@/components/MissionFeatures";
 import StatsSection from "@/components/StatsSection";
 import GetStartedCTA from "@/components/GetStartedCTA";
 
+export const metadata: Metadata = {
+  title: {
+    absolute: "Parlia - Radical Self-Discovery Engine & Opinion DNA™",
+  },
+  description:
+    "Meet the team behind Parlia and discover our mission to improve the world through radical self-discovery and Opinion DNA™.",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "Parlia - Radical Self-Discovery Engine & Opinion DNA™",
+    description:
+      "Meet the team behind Parlia and discover our mission to improve the world through radical self-discovery and Opinion DNA™.",
+  },
+};
+
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Parlia",
+  url: "https://go.parlia.com",
+  logo: "https://go.parlia.com/images/parlia-logo.svg",
+  description:
+    "Parlia is a radical new self-discovery engine, and home of your Opinion DNA™.",
+  founders: [
+    {
+      "@type": "Person",
+      name: "Turi Munthe",
+      jobTitle: "Founder & CEO",
+    },
+    {
+      "@type": "Person",
+      name: "J. Paul Neeley",
+      jobTitle: "Co-founder & Head of Design",
+    },
+  ],
+  sameAs: [
+    "https://www.instagram.com/parlia",
+    "https://www.facebook.com/parlia",
+    "https://twitter.com/paraborea",
+  ],
+};
+
 export default function HomePage() {
   return (
     <>
+      {/* Safe: hardcoded JSON-LD with no user input */}
+      <Script
+        id="organization-jsonld"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+      />
       {/* Hero */}
       <section className="bg-parlia-cream py-16 px-6 text-center">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">
