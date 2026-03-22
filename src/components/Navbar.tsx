@@ -17,7 +17,7 @@ export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <nav className="w-full bg-white py-4 px-6 md:px-12 flex items-center justify-between relative z-50">
+    <nav className="sticky top-0 w-full bg-white/80 backdrop-blur-lg py-4 px-6 md:px-12 flex items-center justify-between z-50 border-b border-white/20">
       <Link href="/" className="flex items-center">
         <Image
           src="/images/parlia-logo.svg"
@@ -83,7 +83,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="absolute top-full left-0 w-full bg-white shadow-lg md:hidden">
+        <div className="absolute top-full left-0 w-full bg-white/90 backdrop-blur-lg shadow-lg md:hidden">
           <div className="flex flex-col p-4 gap-2">
             {navLinks.map((link) => (
               <Link
