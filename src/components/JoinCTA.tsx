@@ -14,13 +14,6 @@ export default function JoinCTA() {
           />
         </div>
         <div className="flex flex-col md:flex-row items-center gap-4 md:gap-6 text-center md:text-left">
-          <Image
-            src="/images/globe-world.png"
-            alt="Globe"
-            width={60}
-            height={60}
-            className="flex-shrink-0 hidden md:block"
-          />
           <p className="text-base font-medium">
             Join 12,000+ People better understanding themselves through deep
             self-discovery

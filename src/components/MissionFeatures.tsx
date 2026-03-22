@@ -51,7 +51,7 @@ export default function MissionFeatures({
                   alt={feature.title}
                   width={48}
                   height={48}
-                  className="flex-shrink-0 mt-0.5"
+                  className="flex-shrink-0 mt-0.5 brightness-0 invert"
                 />
                 <div>
                   <h4 className="font-bold text-base mb-1">{feature.title}</h4>

@@ -244,7 +244,7 @@ export default function HomePage() {
                 alt="Opinion DNA Model"
                 width={500}
                 height={403}
-                className="w-full"
+                className="w-full rounded-2xl"
               />
             </div>
           </div>
@@ -375,6 +375,9 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Stats */}
+      <StatsSection />
+
       {/* Curious? / Careers */}
       <section className="py-16 px-6">
         <div className="max-w-5xl mx-auto">
@@ -458,9 +461,6 @@ export default function HomePage() {
 
       {/* Mission Features */}
       <MissionFeatures variant="home" />
-
-      {/* Stats */}
-      <StatsSection />
 
       {/* Get Started */}
       <GetStartedCTA />
