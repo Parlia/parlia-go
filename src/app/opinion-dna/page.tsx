@@ -160,7 +160,7 @@ export default function OpinionDNAPage() {
                 alt="Opinion DNA Advanced Model"
                 width={600}
                 height={484}
-                className="w-full"
+                className="w-full rounded-sm"
               />
             </div>
             <div className="md:w-1/2">
@@ -328,12 +328,12 @@ export default function OpinionDNAPage() {
 
       {/* Pricing Table */}
       <section className="py-16 px-6">
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           <div className="overflow-x-auto">
             <table className="w-full text-sm">
               <thead>
                 <tr>
-                  <th className="text-left py-4 px-4 w-1/3"></th>
+                  <th className="text-left py-4 px-4 w-1/4"></th>
                   <th className="text-center py-4 px-4">
                     <span className="text-xl">⚡️🧠⚡️</span>
                     <div className="font-bold text-lg mt-1">Free Basics</div>
@@ -345,51 +345,45 @@ export default function OpinionDNAPage() {
                       Transform yourself
                     </div>
                   </th>
+                  <th className="text-center py-4 px-4">
+                    <div className="font-bold text-lg">Opinion DNA™ Advanced</div>
+                    <div className="text-gray-500 text-xs">
+                      The complete picture
+                    </div>
+                  </th>
                 </tr>
               </thead>
               <tbody>
                 {[
-                  { feature: "Opinion DNA™ Elements", free: true, paid: true },
-                  { feature: "My Opinion Vault", free: true, paid: true },
-                  { feature: "My Opinion Feed", free: true, paid: true },
-                  { feature: "My Insights Lab", free: true, paid: true },
-                  {
-                    feature: "My Complete Opinion DNA™",
-                    free: false,
-                    paid: true,
-                  },
-                  {
-                    feature: "Opinion DNA™ e-Book",
-                    free: false,
-                    paid: true,
-                  },
+                  { feature: "Opinion DNA™ Elements", free: true, paid: true, advanced: true },
+                  { feature: "My Opinion Vault", free: true, paid: true, advanced: true },
+                  { feature: "My Opinion Feed", free: true, paid: true, advanced: true },
+                  { feature: "My Insights Lab", free: true, paid: true, advanced: true },
+                  { feature: "My Complete Opinion DNA™", free: false, paid: true, advanced: true },
+                  { feature: "Opinion DNA™ e-Book", free: false, paid: true, advanced: true },
+                  { feature: "Personalized AI Report", free: false, paid: false, advanced: true },
                 ].map((row) => (
                   <tr key={row.feature} className="border-t border-gray-100">
                     <td className="py-4 px-4 font-medium">{row.feature}</td>
-                    <td className="py-4 px-4 text-center">
-                      {row.free ? (
-                        <span className="text-gray-500">✔</span>
-                      ) : (
-                        <span className="inline-block bg-gray-100 text-gray-400 w-8 h-8 leading-8 rounded">
-                          ✕
-                        </span>
-                      )}
-                    </td>
-                    <td className="py-4 px-4 text-center">
-                      {row.paid ? (
-                        <span
-                          className={
-                            row.free
-                              ? "text-gray-500"
-                              : "inline-block bg-parlia-mint text-white w-8 h-8 leading-8 rounded"
-                          }
-                        >
-                          ✔
-                        </span>
-                      ) : (
-                        <span className="text-gray-400">✕</span>
-                      )}
-                    </td>
+                    {[row.free, row.paid, row.advanced].map((val, i) => (
+                      <td key={i} className="py-4 px-4 text-center">
+                        {val ? (
+                          <span
+                            className={
+                              row.free && i < 2
+                                ? "text-gray-500"
+                                : "inline-block bg-parlia-mint text-white w-8 h-8 leading-8 rounded"
+                            }
+                          >
+                            ✔
+                          </span>
+                        ) : (
+                          <span className="inline-block bg-gray-100 text-gray-400 w-8 h-8 leading-8 rounded">
+                            ✕
+                          </span>
+                        )}
+                      </td>
+                    ))}
                   </tr>
                 ))}
               </tbody>
@@ -413,7 +407,7 @@ export default function OpinionDNAPage() {
                 alt="Complete Opinion DNA Report"
                 width={400}
                 height={407}
-                className="w-full rounded-lg shadow-lg"
+                className="w-full rounded-sm"
               />
             </div>
             <div className="md:w-1/2">
@@ -441,7 +435,7 @@ export default function OpinionDNAPage() {
                 alt="Opinion DNA e-book"
                 width={400}
                 height={448}
-                className="w-full rounded-lg shadow-lg"
+                className="w-full rounded-sm"
               />
             </div>
             <div className="md:w-1/2">
