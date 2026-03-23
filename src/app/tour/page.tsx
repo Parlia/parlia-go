@@ -58,7 +58,7 @@ export default function TourPage() {
                 width={400}
                 height={322}
                 priority
-                className="w-full"
+                className="w-full rounded-sm"
               />
             </div>
             <div className="md:w-1/2">
@@ -93,7 +93,7 @@ export default function TourPage() {
                 alt="Explore the breakdown on topics like Religiosity"
                 width={400}
                 height={238}
-                className="w-full rounded-lg"
+                className="w-full rounded-sm"
               />
             </div>
             <div className="md:w-1/2">
@@ -127,7 +127,7 @@ export default function TourPage() {
                 alt="Opinions on Happiness from Parlia"
                 width={400}
                 height={171}
-                className="w-full rounded-lg shadow-md"
+                className="w-full rounded-sm"
               />
             </div>
             <div className="md:w-1/2">
@@ -160,7 +160,7 @@ export default function TourPage() {
                 alt="Opinion Lab"
                 width={400}
                 height={120}
-                className="w-full rounded-lg shadow-md"
+                className="w-full rounded-sm"
               />
             </div>
             <div className="md:w-1/2">
@@ -212,7 +212,7 @@ export default function TourPage() {
                 alt="Dig into your opinions"
                 width={400}
                 height={410}
-                className="w-full rounded-lg shadow-md"
+                className="w-full rounded-sm"
               />
             </div>
             <div className="md:w-1/2">
@@ -244,7 +244,7 @@ export default function TourPage() {
                 alt="Build your Opinion collection"
                 width={400}
                 height={390}
-                className="w-full rounded-lg shadow-md"
+                className="w-full rounded-sm"
               />
             </div>
             <div className="md:w-1/2">
@@ -278,7 +278,7 @@ export default function TourPage() {
                 alt="Understand how other people see the world"
                 width={400}
                 height={374}
-                className="w-full rounded-lg shadow-md"
+                className="w-full rounded-sm"
               />
             </div>
             <div className="md:w-1/2">
@@ -312,7 +312,7 @@ export default function TourPage() {
                 alt="Explore the splits"
                 width={400}
                 height={528}
-                className="w-full rounded-lg shadow-md"
+                className="w-full rounded-sm"
               />
             </div>
             <div className="md:w-1/2">
@@ -341,7 +341,7 @@ export default function TourPage() {
                 alt="Research at top universities"
                 width={400}
                 height={316}
-                className="w-full rounded-lg"
+                className="w-full rounded-sm"
               />
             </div>
             <div className="md:w-1/2">
