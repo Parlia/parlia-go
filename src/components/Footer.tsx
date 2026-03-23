@@ -17,10 +17,10 @@ export default function Footer() {
         />
 
         <div className="flex flex-wrap justify-center gap-x-6 gap-y-1 mb-6 text-sm">
-          <Link href="/" className={linkClass}>
+          <a href="https://www.parlia.com" className={linkClass}>
             Home
-          </Link>
-          <Link href="/about" className={linkClass}>
+          </a>
+          <Link href="/" className={linkClass}>
             About Us
           </Link>
           <Link href="/tour" className={linkClass}>
@@ -32,37 +32,34 @@ export default function Footer() {
         </div>
 
         <div className="flex flex-wrap justify-center gap-x-6 gap-y-1 mb-6 text-sm">
-          <a href="#" className={linkClass}>
-            Instagram
-          </a>
-          <a href="#" className={linkClass}>
+          <a href="https://www.facebook.com/JoinParlia/" className={linkClass}>
             Facebook
           </a>
-          <a href="#" className={linkClass}>
+          <a href="https://x.com/askParlia" className={linkClass}>
             Twitter
           </a>
-          <a href="#" className={linkClass}>
+          <a href="https://www.parlia.com/article/newsletter" className={linkClass}>
             Newsletter
           </a>
-          <a href="#" className={linkClass}>
+          <a href="https://encyclopedia-of-opinion.org/article/opinion-parlia-podcast" className={linkClass}>
             Podcast
           </a>
         </div>
 
         <div className="mb-6 text-sm">
-          <a href="#" className={linkClass}>
+          <a href="https://encyclopedia-of-opinion.org/" className={linkClass}>
             Encyclopedia of Opinion
           </a>
         </div>
 
         <div className="flex flex-wrap justify-center gap-x-6 gap-y-1 mb-8 text-sm">
-          <a href="#" className={linkClass}>
+          <a href="https://www.parlia.com/terms-of-service" className={linkClass}>
             Terms
           </a>
-          <a href="#" className={linkClass}>
+          <a href="https://www.parlia.com/privacy" className={linkClass}>
             Privacy
           </a>
-          <a href="#" className={linkClass}>
+          <a href="https://www.parlia.com/cookies" className={linkClass}>
             Cookies
           </a>
         </div>
