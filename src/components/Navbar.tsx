@@ -31,17 +31,21 @@ export default function Navbar() {
       {/* Desktop nav */}
       <div className="hidden md:flex items-center gap-2">
         {navLinks.map((link) => {
-          const isActive = pathname === link.href;
-          const isAbout = link.href === "/about";
+          // "/" and "/about" both map to the About Us page
+          // "Home" links to main app — never highlighted as active
+          const isActive =
+            link.href === "/"
+              ? false
+              : link.href === "/about"
+              ? pathname === "/" || pathname === "/about"
+              : pathname === link.href;
           return (
             <Link
               key={link.href}
               href={link.href}
               className={`px-5 py-2.5 rounded-full text-sm font-medium transition-colors min-h-[44px] flex items-center ${
-                isAbout
+                isActive
                   ? "bg-parlia-purple text-white hover:bg-purple-700"
-                  : isActive
-                  ? "bg-gray-100 text-black"
                   : "text-black hover:bg-gray-100"
               }`}
             >
