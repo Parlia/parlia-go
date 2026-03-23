@@ -6,6 +6,7 @@ import TechCrunchQuote from "@/components/TechCrunchQuote";
 import JoinCTA from "@/components/JoinCTA";
 import StatsSection from "@/components/StatsSection";
 import GetStartedCTA from "@/components/GetStartedCTA";
+import Accordion from "@/components/Accordion";
 
 export const metadata: Metadata = {
   title: "Opinion DNA™ - Discover Your Mind",
@@ -21,35 +22,65 @@ export const metadata: Metadata = {
   },
 };
 
+const faqItems = [
+  {
+    question: "What is Parlia's Purpose?",
+    answer:
+      "Parlia is ALL about your self-discovery. We want to make the world a better, more empathetic place. We believe we can do this by helping individuals better understand themselves.",
+  },
+  {
+    question: "What is Opinion DNA™?",
+    answer:
+      "Opinion DNA™ is an innovative diagnostic that maps your complete personality, values, and thinking style. It combines five dimensions — Core Personality, Core Values, Meta Thinking, Demographic Context, and Topic Expression — to give you an unprecedented picture of how and why you think the way you do.",
+  },
+  {
+    question: "How does Opinion DNA™ work?",
+    answer:
+      "You respond to a series of simple opinion statements. Our Perspectives Engine analyzes your responses against over 180 million data points to generate your personalized Opinion DNA™ profile, report, and e-book.",
+  },
+  {
+    question: "How can Premium transform my life?",
+    answer:
+      "We can give you specific personal direction based on your Opinion DNA. These suggestions make actionable your new self-understanding — from improving relationships to career decisions.",
+  },
+  {
+    question: "What is the difference between Free, Opinion DNA™, and Advanced?",
+    answer:
+      "Free Basics gives you access to Opinion DNA™ Elements, your Opinion Vault, Feed, and Insights Lab. Opinion DNA™ adds your complete diagnostic report and e-book. Advanced includes everything plus a Personalized AI Report with tailored recommendations.",
+  },
+  {
+    question: "How long does it take to get my Opinion DNA™?",
+    answer:
+      "Most people complete the initial assessment in 15-20 minutes. Your Opinion DNA™ Elements begin appearing immediately. The full report and e-book are generated once you have shared enough opinions for a reliable diagnostic.",
+  },
+  {
+    question: "What do you do with my data?",
+    answer:
+      "We process the data ONLY to share it back to you. We will never sell your personal data. We will never use your data to target or spam you. Our whole goal is to help you discover your own thinking.",
+  },
+  {
+    question: "Can I use Opinion DNA™ with my clients?",
+    answer:
+      "Yes! If you are a life coach, business coach, or therapist, Opinion DNA™ can be a powerful tool to help your clients better understand themselves. Contact us to learn about our professional plans.",
+  },
+  {
+    question: "Is my data safe?",
+    answer:
+      "Absolutely. Your opinions are always private. Your demographic information is secure. Your data is anonymous, and we only share aggregate insights — never personal data. You can leave at any time.",
+  },
+];
+
 const faqJsonLd = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
-  mainEntity: [
-    {
-      "@type": "Question",
-      name: "What is Parlia's Purpose?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Parlia is ALL about your self-discovery. We want to make the world a better, more empathetic place. We believe we can do this by helping individuals better understand themselves.",
-      },
+  mainEntity: faqItems.map((item) => ({
+    "@type": "Question",
+    name: item.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: item.answer,
     },
-    {
-      "@type": "Question",
-      name: "How can Premium transform my life?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "We can give you specific personal direction based on your Opinion DNA. These suggestions make actionable your new self-understanding.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "What do you do with my data?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "We process the data ONLY to share it back to you. We will never sell your personal data. We will never use your data to target or spam you. Our whole goal is to help you discover your own thinking.",
-      },
-    },
-  ],
+  })),
 };
 
 export default function OpinionDNAPage() {
@@ -160,7 +191,7 @@ export default function OpinionDNAPage() {
                 alt="Opinion DNA Advanced Model"
                 width={600}
                 height={484}
-                className="w-full rounded-sm"
+                className="w-full rounded-[5px]"
               />
             </div>
             <div className="md:w-1/2">
@@ -407,7 +438,7 @@ export default function OpinionDNAPage() {
                 alt="Complete Opinion DNA Report"
                 width={400}
                 height={407}
-                className="w-full rounded-sm"
+                className="w-full rounded-[5px]"
               />
             </div>
             <div className="md:w-1/2">
@@ -435,7 +466,7 @@ export default function OpinionDNAPage() {
                 alt="Opinion DNA e-book"
                 width={400}
                 height={448}
-                className="w-full rounded-sm"
+                className="w-full rounded-[5px]"
               />
             </div>
             <div className="md:w-1/2">
@@ -539,54 +570,8 @@ export default function OpinionDNAPage() {
           <h2 className="text-3xl font-bold text-white text-center mb-12">
             FAQ
           </h2>
-          <div className="space-y-8 text-white">
-            <div>
-              <h3 className="font-bold text-lg mb-2">
-                What is Parlia&apos;s Purpose?
-              </h3>
-              <ul className="text-sm opacity-90 space-y-1">
-                <li>Parlia is ALL about your self-discovery</li>
-                <li>
-                  We want to make the world a better, more empathetic place
-                </li>
-                <li>
-                  We believe we can do this by helping individuals better
-                  understand themselves
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="font-bold text-lg mb-2">
-                How can Premium transform my life?
-              </h3>
-              <ul className="text-sm opacity-90 space-y-1">
-                <li>
-                  We can give you specific personal direction based on your
-                  Opinion DNA
-                </li>
-                <li>
-                  These suggestions make actionable your new self-understanding
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="font-bold text-lg mb-2">
-                What do you do with my data?
-              </h3>
-              <ul className="text-sm opacity-90 space-y-1">
-                <li>
-                  We process the data, ONLY to share it back to you
-                </li>
-                <li>We will never sell your personal data</li>
-                <li>
-                  We will never use your data to target or spam you
-                </li>
-                <li>
-                  Our whole goal of gathering this information is to help you
-                  discover your own thinking
-                </li>
-              </ul>
-            </div>
+          <div className="text-white">
+            <Accordion items={faqItems} />
           </div>
         </div>
       </section>
@@ -601,18 +586,18 @@ export default function OpinionDNAPage() {
             height={300}
             className="rounded-3xl w-56 md:w-64"
           />
-          <div className="flex-1 text-center md:text-left">
-            <p className="text-sm text-white leading-relaxed">
+          <div className="max-w-sm text-center md:text-left">
+            <p className="text-base text-white leading-relaxed mb-4">
               Are you a life or business coach, or therapist who wants to use
               Opinion DNA™ to support your clients? Let&apos;s talk!
             </p>
+            <a
+              href="#"
+              className="inline-block bg-parlia-red text-white px-8 py-3 rounded-full font-semibold text-sm hover:bg-red-600 transition-colors"
+            >
+              Contact Us
+            </a>
           </div>
-          <a
-            href="#"
-            className="bg-parlia-red text-white px-8 py-3 rounded-full font-semibold text-sm hover:bg-red-600 transition-colors whitespace-nowrap"
-          >
-            Contact Us
-          </a>
         </div>
       </section>
 
